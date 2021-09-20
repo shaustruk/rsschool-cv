@@ -218,7 +218,8 @@ p,
 details,
 .languages-list,
 .example-link,
-.education-list li {
+.education-list li,
+h4 {
     font-family:'Times New Roman', Times, serif;
     font-size: 24px;
     letter-spacing: normal;
@@ -230,13 +231,14 @@ details,
 mark {
     background-color: #A6ADB5;
 }
-.contacts-list a {
+
+h5 {
     font-size: 25px;
     color: #1D282B;
     
 }
 
-.contacts-list a:hover {
+h5:hover {
     color: #c4e010;
     border-radius: 15px;
     box-shadow: 5px 9px 20px rgb(0 0 0 / 15%);
@@ -245,7 +247,8 @@ mark {
 
 .contact-img {
     width: 30px;
-    margin-right: 10px;
+    margin: 0 auto;
+
 }
 
 section {
@@ -264,7 +267,8 @@ main {
 
 }
 
-.video {
+#video {
+    display: none;
     min-width: 100%;
     height: 200px;
     border: 2px solid yellow;
@@ -273,10 +277,6 @@ main {
 
 ul {
     list-style: none;
-}
-
-.example-link {
-   font-size: 20px;
 }
 
 .projects-list li {
@@ -303,7 +303,8 @@ aside {
     display: grid;
     grid-gap: 20px;
     
-}  
+}
+
 .items {
     padding: 30px 20px 0 20px;
     border-right: 1px solid #d1d6dc;
@@ -338,6 +339,10 @@ code, pre, pre code {
     text-align: center;
 }
 
+h4 {
+    text-align-last: center;
+}
+
 .example-img {
     display: block;
     max-width: 60%;
@@ -348,11 +353,11 @@ code, pre, pre code {
 
 .example-img:hover {
     transform: scale(1.1);
-    box-shadow: #C7D4E5;
+    
 }
 
 .education-link {
-    font-style: 20px;
+    font-size: 20px;
     font-weight: 400;
     color: #1D282B;
 }
@@ -456,7 +461,7 @@ time {
 
 @media all and (max-width:767px) {
     .container {
-        min-width: none;
+        /*min-width: none;*/
     }
     
     h1, h2, h3 {
